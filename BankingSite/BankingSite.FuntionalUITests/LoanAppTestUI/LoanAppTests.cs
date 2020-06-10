@@ -1,8 +1,11 @@
 ﻿using BankingSite.FuntionalUITests.helpers;
+using BankingSite.Models;
+using HtmlAgilityPack;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TestStack.Seleno.Configuration;
+
 
 namespace BankingSite.FuntionalUITests.LoanAppTestUI
 {
@@ -11,6 +14,7 @@ namespace BankingSite.FuntionalUITests.LoanAppTestUI
     {
         public static readonly SelenoHost Instance = new SelenoHost();
 
+      
         [Test]
         public void ShouldAcceptLoanApplication()
         {
