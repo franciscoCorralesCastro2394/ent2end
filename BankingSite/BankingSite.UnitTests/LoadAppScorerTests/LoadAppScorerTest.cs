@@ -46,7 +46,7 @@ namespace BankingSite.UnitTests.LoadAppScorerTests
 
             var application = new LoanApplication
             {
-                Age = 22,
+                Age = 28,
                 AnnualIncome = 1000000.01m,
             };
 
