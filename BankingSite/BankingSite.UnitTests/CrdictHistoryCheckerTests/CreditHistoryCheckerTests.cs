@@ -33,7 +33,7 @@ namespace BankingSite.UnitTests.CrdictHistoryCheckerTests
 
             var isCreditWorthy = sut.CheckCreditHistory("Francisco", "Corrales");
 
-            Assert.That(isCreditWorthy, Is.True);
+            Assert.That(isCreditWorthy, Is.False);
 
 
         }
