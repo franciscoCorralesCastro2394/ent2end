@@ -15,20 +15,20 @@ namespace BankingSiteViewTests.LoanAppSearchAppStatusViewTests
    public  class LoanAppSearchAppStatusViewTests
     {
 
-        [Test]
-        public void ShoulRenderAcceptdMessage() {
+        //[Test]
+        //public void ShoulRenderAcceptdMessage() {
 
-            var sut = new BankingSite.Views.LoanApplicationSearch.ApplicationStatus();
+        //    var sut = new BankingSite.Views.LoanApplicationSearch.ApplicationStatus();
 
-            var model = new LoanApplication { IsAccepted = true };
+        //    var model = new LoanApplication { IsAccepted = true };
 
-            HtmlDocument html = sut.RenderAsHtml(model);
+        //    HtmlDocument html = sut.RenderAsHtml(model);
 
 
-            var message = html.GetElementbyId("status").InnerText;
+        //    var message = html.GetElementbyId("status").InnerText;
 
-            Assert.That(message, Contains.Substring("Yay! Accepted!"));
-        }
+        //    Assert.That(message, Contains.Substring("Yay! Accepted!"));
+        //}
 
     }
 }

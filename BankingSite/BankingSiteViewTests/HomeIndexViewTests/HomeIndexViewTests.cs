@@ -15,45 +15,45 @@ namespace BankingSiteViewTests.HomeIndexViewTests
     public class HomeIndexViewTests
     {
 
-        [Test]
-        public void ShouldRenderLoanInterestRate() {
+        //[Test]
+        //public void ShouldRenderLoanInterestRate() {
 
-            var sut = new BankingSite.Views.Home.Index();
+        //    var sut = new BankingSite.Views.Home.Index();
 
-            var model = new InterestRates
-            {
+        //    var model = new InterestRates
+        //    {
 
-                LoanRate = 22.22m
+        //        LoanRate = 22.22m
 
-            };
-
-
-            HtmlDocument html = sut.RenderAsHtml(model);
-
-            var renderedLoanRate = html.GetElementbyId("loanRate").InnerText;
-
-            Assert.That(renderedLoanRate, Is.EqualTo("22.22"));
-
-        }
+        //    };
 
 
-        [Test]
-        public void ShouldRenderMainMessage()
-        {
+        //    HtmlDocument html = sut.RenderAsHtml(model);
 
-            var sut = new BankingSite.Views.Home.Index();
+        //    var renderedLoanRate = html.GetElementbyId("loanRate").InnerText;
 
-            sut.ViewBag.Message = "Hello Grupo Babel";
+        //    Assert.That(renderedLoanRate, Is.EqualTo("22.22"));
 
-            HtmlDocument html = sut.RenderAsHtml(new InterestRates());
-
-            var actulMessage = html.GetElementbyId("mainMessage").InnerText;
+        //}
 
 
-            Assert.That(actulMessage, Is.EqualTo("Hello Grupo Babel"));
+        //[Test]
+        //public void ShouldRenderMainMessage()
+        //{
+
+        //    var sut = new BankingSite.Views.Home.Index();
+
+        //    sut.ViewBag.Message = "Hello Grupo Babel";
+
+        //    HtmlDocument html = sut.RenderAsHtml(new InterestRates());
+
+        //    var actulMessage = html.GetElementbyId("mainMessage").InnerText;
 
 
-        }
+        //    Assert.That(actulMessage, Is.EqualTo("Hello Grupo Babel"));
+
+
+        //}
 
 
     }
